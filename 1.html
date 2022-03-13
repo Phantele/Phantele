@@ -3,65 +3,26 @@
 <head>
     <title>WEB1 - HTML</title>
     <meta charset="=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 너비 조절 -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7WCBNGY2P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z7WCBNGY2P');
-</script>
-
-<style>
-    body{
-        margin:0px;
-    }
-    a{
-        color:black; 
-        text-decoration: none;
-    }
-    h1{
-        font-size: 50px; 
-        text-align: center;
-        border-bottom: 1px solid gray;
-        padding: 20px;
-        margin:0;
-    }
-    ol{
-        border-right: 1px solid gray;
-        width:100px;
-        margin:0;
-        padding:20px;
-    }
-    #grid{
-        display: grid;
-        grid-template-columns: 150px 1fr;
-    }
-    #grid ol{
-        padding-left: 33px;
-    }
-    #grid #article{
-        padding-left: 25px;
-    }
-    @media(max-width:800px) {
-        #grid{
-        display: block;
-        }
-        #grid ol{
-            border-right: none;
-        }
-        h1{
-            border-bottom: none;
-        }
-    }
-</style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7WCBNGY2P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-Z7WCBNGY2P');
+        </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+    NightDayHandler(this);
+    ">
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
@@ -73,9 +34,13 @@
             <p>
             <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 sepcification">Hypertext Markup Language (HTML)</a> is the standard Markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from aweb server or from local storage andrender them into multimedia web pages.HTML decribes the structure of a Webpage semantically and origiinallyincluded cues for the appearance of document.</p>
             <img src="coding.jpg" width="320">
-            <p style="margin-top:40px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items, HTML elements are delineated by tags, written using angle brackets.</p>
+            <p style="margin-top:40px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items, HTML elements are delineated by tags, written using angle brackets.
+            </p>
         </div>
     </div>
+    <input id = night_day type="button" value="night" onclick="
+    NightDayHandler(this);
+    ">
 
     <p>
         <div id="disqus_thread"></div>
@@ -98,6 +63,7 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </p>
+
 
 </body>
 </html>

@@ -3,65 +3,25 @@
 <head>
     <title>WEB1 - Welcome</title>
     <meta charset="=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7WCBNGY2P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z7WCBNGY2P');
-</script>
-
-<style>
-    body{
-        margin:0px;
-    }
-    a{
-        color:black; 
-        text-decoration: none;
-    }
-    h1{
-        font-size: 50px; 
-        text-align: center;
-        border-bottom: 1px solid gray;
-        padding: 20px;
-        margin:0;
-    }
-    ol{
-        border-right: 1px solid gray;
-        width:100px;
-        margin:0;
-        padding:20px;
-    }
-    #grid{
-        display: grid;
-        grid-template-columns: 150px 1fr;
-    }
-    #grid ol{
-        padding-left: 33px;
-    }
-    #grid #article{
-        padding-left: 25px;
-    }
-    @media(max-width:800px) {
-        #grid{
-        display: block;
-        }
-        #grid ol{
-            border-right: none;
-        }
-        h1{
-            border-bottom: none;
-        }
-    }
-</style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 너비 조절 -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7WCBNGY2P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Z7WCBNGY2P');
+        </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+        NightDayHandler(this);
+    ">
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
@@ -78,6 +38,9 @@
                 </p>
         </div>
     </div>
+    <input id = night_day type="button" value="night" onclick="
+    NightDayHandler(this);
+    ">
     <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </p>
